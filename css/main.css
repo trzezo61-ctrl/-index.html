@@ -1,0 +1,263 @@
+:root {
+  /* Color Palette - Cyber Dark & Neon Glows */
+  --bg-primary: #07090e;
+  --bg-secondary: #0b0f19;
+  --bg-tertiary: #111827;
+  --bg-card: rgba(15, 23, 42, 0.65);
+  --bg-card-hover: rgba(22, 33, 58, 0.85);
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+  --bg-card-border-hover: rgba(56, 189, 248, 0.4);
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  /* Neon & Brand Accents */
+  --brand-cyan: #00f0ff;
+  --brand-blue: #3b82f6;
+  --brand-purple: #8b5cf6;
+  --brand-purple-dark: #6d28d9;
+  --brand-violet: #a855f7;
+  --brand-glow: rgba(0, 240, 255, 0.25);
+  --brand-purple-glow: rgba(139, 92, 246, 0.3);
+  
+  /* WhatsApp Colors */
+  --wa-green: #25d366;
+  --wa-green-hover: #22bf5b;
+  --wa-glow: rgba(37, 211, 102, 0.35);
+  
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, #00f0ff 0%, #3b82f6 50%, #8b5cf6 100%);
+  --gradient-text: linear-gradient(135deg, #ffffff 20%, #93c5fd 60%, #c084fc 100%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  --gradient-border: linear-gradient(135deg, rgba(0, 240, 255, 0.4), rgba(139, 92, 246, 0.2), transparent);
+  
+  /* Shadows & Glassmorphism */
+  --glass-blur: blur(16px);
+  --glass-blur-lg: blur(24px);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
+  --shadow-neon-cyan: 0 0 30px rgba(0, 240, 255, 0.3);
+  --shadow-neon-purple: 0 0 30px rgba(139, 92, 246, 0.35);
+  --shadow-neon-wa: 0 0 25px rgba(37, 211, 102, 0.4);
+  
+  /* Layout & Geometry */
+  --container-max: 1240px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  direction: rtl;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Tajawal', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cyber Background Ambient Glows */
+body::before {
+  content: '';
+  position: fixed;
+  top: -150px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 240, 255, 0.12) 0%, rgba(59, 130, 246, 0.05) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: 10%;
+  left: -150px;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(168, 85, 247, 0.04) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Background Particle Canvas */
+#particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Subtle Grid Background Pattern */
+.cyber-grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 85%);
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 85%);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-brand-text {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+/* Section Header Utility */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 56px auto;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 240, 255, 0.08);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  color: var(--brand-cyan);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.15);
+}
+
+.section-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--brand-cyan);
+  box-shadow: 0 0 8px var(--brand-cyan);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.85rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.98rem;
+  }
+  
+  .section-header {
+    margin-bottom: 38px;
+  }
+  
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

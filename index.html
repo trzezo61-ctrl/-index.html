@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>TRZEZO | خدمات السوشيال ميديا</title>
+  <meta name="title" content="TRZEZO | خدمات السوشيال ميديا">
+  <meta name="description" content="TRZEZO يقدم خدمات السوشيال ميديا لمنصات TikTok وInstagram وFacebook وYouTube وغيرها. تواصل معنا مباشرة عبر واتساب.">
+  <meta name="keywords" content="TRZEZO, خدمات سوشيال ميديا, متابعين تيك توك, لايكات انستغرام, مشاهدات يوتيوب, فيسبوك, تليجرام, سناب شات, منصة إكس">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#07090e">
+  <meta name="author" content="TRZEZO">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trzezo.com/">
+  <meta property="og:title" content="TRZEZO | خدمات السوشيال ميديا">
+  <meta property="og:description" content="TRZEZO يقدم خدمات السوشيال ميديا لمنصات TikTok وInstagram وFacebook وYouTube وغيرها. تواصل معنا مباشرة عبر واتساب.">
+  <meta property="og:locale" content="ar_AR">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="TRZEZO | خدمات السوشيال ميديا">
+  <meta property="twitter:description" content="TRZEZO يقدم خدمات السوشيال ميديا لمنصات TikTok وInstagram وFacebook وYouTube وغيرها. تواصل معنا مباشرة عبر واتساب.">
+
+  <!-- Google Fonts: Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2307090e'/><text x='50%' y='68%' font-size='60' font-weight='900' fill='%2300f0ff' text-anchor='middle' font-family='sans-serif'>T</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Cyber Background Pattern & Particle Canvas -->
+  <div class="cyber-grid-overlay"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVBAR
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Logo & Brand Mark -->
+      <a href="#hero" class="brand-logo" id="nav-brand-logo" aria-label="TRZEZO Home">
+        <div class="brand-icon-box">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">TRZEZO</span>
+          <span class="brand-tagline">DIGITAL SERVICES</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="desktop-nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">الرئيسية</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#why-us" class="nav-link">لماذا TRZEZO</a>
+        <a href="#how-it-works" class="nav-link">طريقة العمل</a>
+        <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="https://wa.me/201096275626?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20TRZEZO%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%D9%85" 
+           class="btn btn-whatsapp btn-sm" 
+           id="nav-whatsapp-btn"
+           target="_blank" 
+           rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+          </svg>
+          <span>تواصل معنا</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div class="mobile-nav-menu">
+      <a href="#hero" class="mobile-nav-link active">الرئيسية</a>
+      <a href="#services" class="mobile-nav-link">الخدمات</a>
+      <a href="#why-us" class="mobile-nav-link">لماذا TRZEZO</a>
+      <a href="#how-it-works" class="mobile-nav-link">طريقة العمل</a>
+      <a href="#faq" class="mobile-nav-link">الأسئلة الشائعة</a>
+      <a href="#contact" class="mobile-nav-link">تواصل معنا</a>
+    </div>
+    <a href="https://wa.me/201096275626" 
+       class="btn btn-whatsapp btn-lg" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="width: 100%; max-width: 280px;">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+      </svg>
+      <span>تواصل معنا على واتساب</span>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge">
+              <span class="pulse-point"></span>
+              <span>TRZEZO • SOCIAL MEDIA SERVICES</span>
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            خلّي حضورك أقوى على السوشيال ميديا
+            <span class="title-accent">مع TRZEZO</span>
+          </h1>
+
+          <p class="hero-description">
+            خدمات سوشيال ميديا متعددة في مكان واحد، وتجربة سهلة تبدأ من اختيار الخدمة وتنتهي بالتواصل المباشر مع فريق TRZEZO.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-glow-primary btn-lg" id="hero-explore-btn">
+              <span>استكشف الخدمات</span>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/201096275626?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20TRZEZO%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B3%D9%88%D8%B4%D9%8A%D8%A7%D9%84%20%D9%85%D9%8A%D8%AF%D9%8A%D8%A7." 
+               class="btn btn-outline btn-lg" 
+               id="hero-whatsapp-btn"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="#25d366">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+              </svg>
+              <span>تواصل معنا على واتساب</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Futuristic Visual Dashboard -->
+        <div class="hero-visual-wrapper reveal reveal-delay-2">
+          <div class="hero-visual-glow"></div>
+
+          <!-- Floating Badges -->
+          <div class="hero-floating-bubble bubble-top-left">
+            <span class="bubble-icon-glow" style="background: rgba(0, 240, 255, 0.15); color: #00f0ff;">⚡</span>
+            <span>تنفيذ سريع ومباشر</span>
+          </div>
+
+          <div class="hero-floating-bubble bubble-bottom-right">
+            <span class="bubble-icon-glow" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">💬</span>
+            <span>دعم مستمر عبر واتساب</span>
+          </div>
+
+          <!-- Futuristic Social Control Card -->
+          <div class="hero-dashboard-card">
+            <div class="card-top-bar">
+              <div class="card-top-info">
+                <span class="card-status-dot"></span>
+                <span class="card-brand-label">TRZEZO CONTROL HUB</span>
+              </div>
+              <span class="card-live-badge">متاح الآن</span>
+            </div>
+
+            <div class="hero-platform-list">
+              <!-- TikTok item -->
+              <div class="hero-platform-item">
+                <div class="platform-left">
+                  <div class="platform-icon-pill platform-icon-tiktok">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.33 6.33 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 10.82 4.47 6.27 6.27 0 0 0 1.86-4.5V9.4a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.83z"/>
+                    </svg>
+                  </div>
+                  <div class="platform-meta">
+                    <span class="platform-name-title">TikTok</span>
+                    <span class="platform-services-hint">متابعين • لايكات • مشاهدات</span>
+                  </div>
+                </div>
+                <span class="platform-action-badge">نشط</span>
+              </div>
+
+              <!-- Instagram item -->
+              <div class="hero-platform-item">
+                <div class="platform-left">
+                  <div class="platform-icon-pill platform-icon-instagram">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </div>
+                  <div class="platform-meta">
+                    <span class="platform-name-title">Instagram</span>
+                    <span class="platform-services-hint">تفاعل • ريلز • متابعين</span>
+                  </div>
+                </div>
+                <span class="platform-action-badge">نشط</span>
+              </div>
+
+              <!-- YouTube item -->
+              <div class="hero-platform-item">
+                <div class="platform-left">
+                  <div class="platform-icon-pill platform-icon-youtube">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.35 29 29 0 0 0-.46-5.33z"/>
+                      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#0d121f"/>
+                    </svg>
+                  </div>
+                  <div class="platform-meta">
+                    <span class="platform-name-title">YouTube</span>
+                    <span class="platform-services-hint">مشتركين • مشاهدات • تفاعل</span>
+                  </div>
+                </div>
+                <span class="platform-action-badge">نشط</span>
+              </div>
+
+              <!-- X item -->
+              <div class="hero-platform-item">
+                <div class="platform-left">
+                  <div class="platform-icon-pill platform-icon-x">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                  </div>
+                  <div class="platform-meta">
+                    <span class="platform-name-title">منصة X</span>
+                    <span class="platform-services-hint">متابعين • ريتويت • تفاعل</span>
+                  </div>
+                </div>
+                <span class="platform-action-badge">نشط</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRUST / QUICK STATS
+         ========================================================================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <!-- Card 1 -->
+          <div class="stat-card reveal">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-title">خدمات متعددة</span>
+              <span class="stat-desc">باقات نمو متكاملة تلبي احتياجاتك</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-title">منصات مختلفة</span>
+              <span class="stat-desc">تغطية لكافة المنصات العالمية الشهيرة</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-title">طلب مباشر</span>
+              <span class="stat-desc">اختيار الخدمة والتواصل بضغطة واحدة</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-icon-wrap">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <div class="stat-content">
+              <span class="stat-title">دعم عبر واتساب</span>
+              <span class="stat-desc">تواصل مريح وسريع مع فريق TRZEZO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SECTION
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-badge">
+            <span class="dot"></span>
+            <span>باقات وخدمات السوشيال ميديا</span>
+          </span>
+          <h2 class="section-title">خدماتنا</h2>
+          <p class="section-subtitle">اختار المنصة والخدمة المناسبة ليك وتواصل معنا مباشرة.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="services-filter-bar reveal">
+          <button class="filter-tab active" data-filter="all">الكل</button>
+          <button class="filter-tab" data-filter="tiktok">TikTok</button>
+          <button class="filter-tab" data-filter="instagram">Instagram</button>
+          <button class="filter-tab" data-filter="facebook">Facebook</button>
+          <button class="filter-tab" data-filter="youtube">YouTube</button>
+          <button class="filter-tab" data-filter="telegram">Telegram</button>
+          <button class="filter-tab" data-filter="snapchat">Snapchat</button>
+          <button class="filter-tab" data-filter="x">منصة X</button>
+          <button class="filter-tab" data-filter="other">خدمات أخرى</button>
+        </div>
+
+        <!-- Services Grid (Dynamically Populated by app.js) -->
+        <div class="services-grid" id="services-grid">
+          <!-- Dynamically Injected -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHY TRZEZO
+         ========================================================================== -->
+    <section class="why-section" id="why-us">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">
+            <span class="dot"></span>
+            <span>المميزات والاحترافية</span>
+          </span>
+          <h2 class="section-title">ليه TRZEZO؟</h2>
+          <p class="section-subtitle">نقدم لك بيئة متكاملة تضمن لك سهولة الاختيار وسرعة التواصل والاهتمام بحساباتك الرقمية.</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1 -->
+          <div class="why-card reveal">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="why-card-title">كل الخدمات في مكان واحد</h3>
+            <p class="why-card-desc">لا حاجة للبحث في منصات متعددة، وفرنا لك كل ما يحتاجه حسابك الرقمي في وجهة واحدة مريحة.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="why-card-title">اختيار سهل وسريع</h3>
+            <p class="why-card-desc">واجهة بديهية وواضحة تمكنك من تحديد خدمتك المفضلة بدقة فائقة وبدون أي تعقيد.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">تواصل مباشر</h3>
+            <p class="why-card-desc">تحويل فوري إلى محادثة واتساب الرسمية مع إدراج تفاصيل الخدمة دون الحاجة لإعادة كتابتها.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="why-card reveal">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">دعم ومتابعة</h3>
+            <p class="why-card-desc">فريق جاهز للإجابة على جميع استفساراتك وتوجيهك لأفضل الخيارات المناسبة لأهدافك الرقمية.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="why-card-title">تصميم وتجربة احترافية</h3>
+            <p class="why-card-desc">بنية رقمية حديثة، سريعة وسلسة تجعل كل خطوة في تجربتك واضحة وسهلة الاستخدام.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-card-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="why-card-title">خدمات متعددة للمنصات المختلفة</h3>
+            <p class="why-card-desc">تغطية شاملة لجميع المنصات الحيوية: تيك توك، إنستغرام، فيسبوك، يوتيوب، تليجرام، سناب، وإكس.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOW IT WORKS
+         ========================================================================== -->
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">
+            <span class="dot"></span>
+            <span>بسيطة وسلسة</span>
+          </span>
+          <h2 class="section-title">طريقة العمل</h2>
+          <p class="section-subtitle">ثلاث خطوات بسيطة ومباشرة للبدء في تطوير حسابك معنا.</p>
+        </div>
+
+        <div class="how-steps-grid">
+          <!-- Step 1 -->
+          <div class="how-step-card reveal">
+            <div class="step-number-badge">01</div>
+            <h3 class="how-step-title">اختار الخدمة</h3>
+            <p class="how-step-desc">تصفح منصات السوشيال ميديا وحدد الخدمة التي تناسب متطلبات نمو حسابك الرقمي.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="how-step-card reveal reveal-delay-1">
+            <div class="step-number-badge">02</div>
+            <h3 class="how-step-title">اضغط اطلب الخدمة</h3>
+            <p class="how-step-desc">انقر على زر طلب الخدمة لتأكيد اختيارك والحصول على التفاصيل المخصصة لطلبك.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="how-step-card reveal reveal-delay-2">
+            <div class="step-number-badge">03</div>
+            <h3 class="how-step-title">تواصل معنا على واتساب</h3>
+            <p class="how-step-desc">ستنتقل لمحادثة واتساب تلقائيًا مع تفاصيل طلبك مكتوبة ليرد عليك الفريق فورًا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURE CTA SECTION
+         ========================================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 class="cta-headline">جاهز تطور وجودك على السوشيال ميديا؟</h2>
+          <p class="cta-description">اختار الخدمة المناسبة ليك وابدأ التواصل مع TRZEZO مباشرة.</p>
+          <a href="https://wa.me/201096275626?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20TRZEZO%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A1%20%D9%81%D9%8A%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA%D9%8A." 
+             class="btn btn-glow-primary btn-lg"
+             target="_blank" 
+             rel="noopener noreferrer">
+            <span>ابدأ الآن</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ SECTION
+         ========================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">
+            <span class="dot"></span>
+            <span>إجابات واضحة</span>
+          </span>
+          <h2 class="section-title">الأسئلة الشائعة</h2>
+          <p class="section-subtitle">كل ما تود معرفته عن طريقة الطلب والتواصل مع TRZEZO.</p>
+        </div>
+
+        <div class="faq-container">
+          <!-- Question 1 -->
+          <div class="faq-item reveal">
+            <button class="faq-question-btn" type="button">
+              <span>إزاي أطلب خدمة؟</span>
+              <span class="faq-icon-toggle">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p class="faq-answer-text">اختار الخدمة المناسبة واضغط على اطلب الخدمة، وبعدها هتنتقل مباشرة إلى واتساب للتواصل معنا.</p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item reveal reveal-delay-1">
+            <button class="faq-question-btn" type="button">
+              <span>هل الأسعار موجودة على الموقع؟</span>
+              <span class="faq-icon-toggle">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p class="faq-answer-text">لا، لا نعرض أسعار الخدمات على الموقع. لمعرفة التفاصيل والسعر المناسب للخدمة، تواصل معنا على واتساب.</p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item reveal reveal-delay-2">
+            <button class="faq-question-btn" type="button">
+              <span>إزاي أتواصل مع TRZEZO؟</span>
+              <span class="faq-icon-toggle">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p class="faq-answer-text">من خلال أي زر واتساب موجود في الموقع، أو زر التواصل العائم أسفل الشاشة.</p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item reveal reveal-delay-3">
+            <button class="faq-question-btn" type="button">
+              <span>هل أقدر أسأل عن خدمة مش موجودة؟</span>
+              <span class="faq-icon-toggle">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p class="faq-answer-text">أكيد. استخدم زر التواصل على واتساب واكتب الخدمة التي تبحث عنها وسنوضح لك التفاصيل.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">
+            <span class="dot"></span>
+            <span>فريق الدعم والاستفسارات</span>
+          </span>
+          <h2 class="section-title">تواصل مع TRZEZO</h2>
+          <p class="section-subtitle">عندك سؤال أو محتاج خدمة معينة؟ ابعتلنا على واتساب.</p>
+        </div>
+
+        <div class="contact-card-main reveal">
+          <div class="contact-phone-display">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#25d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span class="phone-digits" id="phone-digits">01096275626</span>
+            <button type="button" class="btn-copy-phone" id="btn-copy-phone" title="نسخ الرقم">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>نسخ الرقم</span>
+            </button>
+          </div>
+
+          <div>
+            <a href="https://wa.me/201096275626" 
+               class="btn btn-whatsapp btn-lg" 
+               id="contact-whatsapp-btn"
+               target="_blank" 
+               rel="noopener noreferrer">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+              </svg>
+              <span>تواصل معنا الآن</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SERVICE ORDER CONFIRMATION MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="service-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="إغلاق النافذة">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <span class="modal-badge">TRZEZO DIRECT ORDER</span>
+      <h3 class="modal-title" id="modal-title">طلب خدمة</h3>
+      <p class="modal-subtitle">سيتم تحويلك إلى واتساب مع تفاصيل الخدمة المختارة للتواصل الفوري مع الفريق.</p>
+
+      <div class="modal-selection-box">
+        <span class="selection-label">أنت اخترت:</span>
+        <div class="selection-value-wrap">
+          <div class="selection-platform-icon" id="modal-platform-icon">
+            <!-- Icon injected -->
+          </div>
+          <span class="selection-service-name" id="modal-service-name">اسم الخدمة</span>
+        </div>
+      </div>
+
+      <div class="modal-field-group">
+        <label for="modal-subservice-select" class="modal-field-label">تغيير أو تحديد الخدمة الدقيقة:</label>
+        <select id="modal-subservice-select" class="modal-select">
+          <!-- Dynamic options -->
+        </select>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#" class="btn btn-whatsapp btn-lg" id="modal-confirm-btn" target="_blank" rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+          </svg>
+          <span>التواصل عبر واتساب</span>
+        </a>
+        <button type="button" class="btn btn-outline" id="modal-cancel-btn">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP BUTTON
+       ========================================================================== -->
+  <a href="https://wa.me/201096275626" 
+     class="floating-whatsapp" 
+     id="floating-whatsapp-btn"
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="تواصل معنا عبر واتساب">
+    <span class="floating-radar-ring"></span>
+    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.36 7.34 9.09 7.41 8.86 7.65C8.63 7.9 7.98 8.5 7.98 9.74C7.98 10.97 8.89 12.16 9.01 12.33C9.13 12.5 10.8 15.07 13.36 16.17C13.97 16.43 14.44 16.59 14.82 16.71C15.43 16.9 15.99 16.88 16.43 16.81C16.92 16.74 17.94 16.19 18.15 15.59C18.36 15 18.36 14.49 18.3 14.39C18.23 14.28 18.06 14.22 17.8 14.09C17.55 13.97 16.31 13.36 16.08 13.27C15.85 13.19 15.69 13.15 15.52 13.39C15.35 13.64 14.88 14.22 14.73 14.39C14.59 14.56 14.44 14.58 14.19 14.46C13.94 14.33 12.87 13.98 11.61 12.85C10.63 11.97 9.97 10.89 9.85 10.68C9.72 10.47 9.83 10.36 9.96 10.23C10.07 10.12 10.21 9.94 10.33 9.8C10.45 9.65 10.5 9.55 10.58 9.38C10.66 9.21 10.62 9.07 10.56 8.94C10.5 8.82 10.02 7.64 9.82 7.15C9.62 6.67 9.42 6.74 9.27 6.73C9.13 6.73 8.96 6.72 8.79 6.72C8.62 6.72 8.35 6.78 8.12 7.03C7.88 7.28 7.23 7.88 7.23 9.12C7.23 10.35 8.14 11.54 8.26 11.71L9.53 7.34Z"/>
+    </svg>
+    <span>تواصل معنا</span>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer Column 1: Brand Info -->
+        <div class="footer-col">
+          <a href="#hero" class="brand-logo" aria-label="TRZEZO">
+            <div class="brand-icon-box">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">TRZEZO</span>
+              <span class="brand-tagline">DIGITAL SERVICES</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">خدمات السوشيال ميديا في مكان واحد.</p>
+        </div>
+
+        <!-- Footer Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">روابط سريعة</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">الرئيسية</a></li>
+            <li><a href="#services" class="footer-link">الخدمات</a></li>
+            <li><a href="#why-us" class="footer-link">لماذا TRZEZO</a></li>
+            <li><a href="#how-it-works" class="footer-link">طريقة العمل</a></li>
+            <li><a href="#faq" class="footer-link">الأسئلة الشائعة</a></li>
+            <li><a href="#contact" class="footer-link">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact & Direct Link -->
+        <div class="footer-col">
+          <h4 class="footer-heading">التواصل المباشر</h4>
+          <div class="footer-contact-info">
+            <span class="footer-phone-badge">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#25d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>01096275626</span>
+            </span>
+
+            <a href="https://wa.me/201096275626" 
+               class="btn btn-whatsapp btn-sm" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               style="width: fit-content;">
+              <span>محادثة واتساب مباشرة</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 TRZEZO. جميع الحقوق محفوظة.</p>
+        <p>تصميم وتطوير رقمي فائق الدقة</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice Element -->
+  <div class="toast-notice" id="toast-notice"></div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
